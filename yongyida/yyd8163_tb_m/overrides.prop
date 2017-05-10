@@ -1,0 +1,5 @@
+# This file will be parsed by build/tools/customize_props.py.
+# Properties in this file will override properties in /system/build.prop
+# If propertyies in this file does not exist in /system/build.prop, the 
+# properties will be added into /system/build.prop
+# Property format are key = value 

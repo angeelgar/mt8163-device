@@ -1,0 +1,4 @@
+# Operation : Migration
+# Purpose : subtitle feature need to w/r /mnt/subt/.
+allow platform_app subtitle_data_file:dir { open read write search create add_name};
+allow platform_app subtitle_data_file:file { open read write create};

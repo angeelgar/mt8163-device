@@ -1,0 +1,6 @@
+# ==============================================
+# Policy File of mTune Module
+# ==============================================
+type g3d_device, dev_type;
+allow { adbd appdomain bootanim dumpstate mediaserver surfaceflinger system_server debuggerd guiext-server ipod program_binary zygote } 
+     g3d_device:chr_file rw_file_perms;
