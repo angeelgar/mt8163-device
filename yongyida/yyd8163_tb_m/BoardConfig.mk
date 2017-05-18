@@ -1,3 +1,6 @@
+#Test robot the first starting up speed
+WITH_DEXPREOPT := true
+
 # Use the non-open-source part, if present
 -include vendor/yongyida/yyd8163_tb_m/BoardConfigVendor.mk
 
