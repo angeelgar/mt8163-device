@@ -31,6 +31,7 @@ allow bootanim custom_file:dir search;
 allow bootanim custom_file:file open;
 allow bootanim custom_file:file read;
 allow bootanim bootani_prop:property_service set;
+allow bootanim misc_yyd_device:chr_file { read write open };
 
 # Date : WK14.43
 # Operation : Migration 
