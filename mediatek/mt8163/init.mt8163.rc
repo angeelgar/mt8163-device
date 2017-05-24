@@ -851,9 +851,9 @@ on property:persist.uartconsole.enable=1
     write /proc/mtprintk 1
 
 # Update the second boot logo
-service bootlogoupdater /system/bin/boot_logo_updater
-    class core
-    oneshot
+#service bootlogoupdater /system/bin/boot_logo_updater
+#    class core
+#    oneshot
 
 service mobile_log_d /system/bin/mobile_log_d
     class main
