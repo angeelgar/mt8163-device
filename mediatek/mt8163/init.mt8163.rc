@@ -873,9 +873,8 @@ service netdiag /system/bin/netdiag
     class main
     socket netdiag stream 0664 root inet
 
-
 service nvram_daemon /system/bin/nvram_daemon
-    class core
+		class main
     user root
     group system
     oneshot
