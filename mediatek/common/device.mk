@@ -2268,6 +2268,10 @@ ifeq ($(strip $(YYD_FPGA_APK_SUPPROT)), yes)
     PRODUCT_PACKAGES += FpgaLoadTool    		# 烧录辅助工具，工厂贴片时用
 endif
 
+ifeq ($(strip $(WAKE_UP_NAME)), xiaoshuai)
+    PRODUCT_PACKAGES += YYDRobotMediaPush    		# 烧录辅助工具，工厂贴片时用
+endif
+
 ifeq ($(strip $(YYD_INFRARED_SUPPORT)), yes)
     PRODUCT_PACKAGES += YYDRobotInfrared    	# 红外遥控
 endif
