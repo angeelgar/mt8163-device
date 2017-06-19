@@ -4,5 +4,8 @@
 # properties will be added into /system/build.prop
 # Property format are key = value 
 
+ro.yongyida.robot_raw_model=y20c_dev
+ro.yongyida.breath_led=1
+persist.yongyida.camera_rotate=true
 
 
