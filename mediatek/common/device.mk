@@ -2286,7 +2286,11 @@ PRODUCT_PACKAGES += YYDRobotLauncher	 # Launcher
 PRODUCT_PACKAGES += YYDRobotFloatButton	 # 悬浮按钮
 PRODUCT_PACKAGES += YYDRobotWPS 
 PRODUCT_PACKAGES += YYDRobotMotorService
+
+ifeq ($(strip $(YYD_PRODUCT_20)), yes)
 PRODUCT_PACKAGES += YYDRobotSettings
+endif
+
 PRODUCT_PACKAGES += YYDRobotArtMuseum
 PRODUCT_PACKAGES += YYDRobotResourceManager
 PRODUCT_PACKAGES += YYDRobotTranslation
@@ -2309,6 +2313,8 @@ PRODUCT_PACKAGES += YYDRobotVoiceMaster
 
 ifeq ($(strip $(YYD_FACE_RECOGNITION_SUPPORT)), yes)
     # 是否支持人脸识别应用
-    PRODUCT_PACKAGES += YYDRobotFoundPeople
-    PRODUCT_PACKAGES += YYDRobotFaceRecognizer
+    #PRODUCT_PACKAGES += YYDRobotFoundPeople
+    #PRODUCT_PACKAGES += YYDRobotFaceRecognizer
+	#PRODUCT_PACKAGES += YYDRobotFoundPeople
+	#PRODUCT_PACKAGES += opencv
 endif
