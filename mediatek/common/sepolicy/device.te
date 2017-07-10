@@ -205,3 +205,6 @@ type i2c1_device, dev_type;
 type i2c2_device, dev_type;
 type misc_yyd_device, dev_type;
 type motor_device, dev_type;
+#type mic_switch_device, dev_type;
+#type mic_onoff_device, dev_type;
+type sensory_device, dev_type;

@@ -362,6 +362,9 @@
 /dev/i2c-1(/.*)?                  u:object_r:i2c1_device:s0
 /dev/i2c-2(/.*)?                  u:object_r:i2c2_device:s0
 /dev/misc_yyd(/.*)?                  u:object_r:misc_yyd_device:s0
+#/dev/mic_switch(/.*)?                  u:object_r:mic_switch_device:s0
+#/dev/mic_onoff(/.*)?                  u:object_r:mic_onoff_device:s0
+/dev/sensory(/.*)?                  u:object_r:sensory_device:s0
 /dev/motor_updt_ctl(/.*)? u:object_r:motor_device:s0
 # #####################################
 # sysfs files
@@ -380,7 +383,7 @@
 /sys/devices/virtual/yyd/breathleds/onoff u:object_r:sysfs_breathleds:s0
 /sys/devices/virtual/yyd/breathleds/color u:object_r:sysfs_breathleds:s0
 /sys/devices/virtual/yyd/breathleds/frequency u:object_r:sysfs_breathleds:s0
-
+#/sys/devices/virtual/mic_switch/mic_switch/yyd_misc u:object_r:sysfs_mic_switch:s0
 #############################
 # System files
 #
