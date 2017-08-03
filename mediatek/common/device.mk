@@ -2270,6 +2270,8 @@ endif
 
 ifeq ($(strip $(WAKE_UP_NAME)), xiaoshuai)
     PRODUCT_PACKAGES += YYDRobotMediaPush    		# 烧录辅助工具，工厂贴片时用
+else ifeq ($(strip $(WAKE_UP_NAME)), xiaoyong)
+    PRODUCT_PACKAGES += YYDRobotMediaPush    		# 烧录辅助工具，工厂贴片时用
 endif
 
 ifeq ($(strip $(YYD_INFRARED_SUPPORT)), yes)
