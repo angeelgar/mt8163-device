@@ -743,7 +743,7 @@ VIDEO_TYPE=webrtc
 
 YYD_BREATHLED_SUPPORT = yes
 
-YYD_PRODUCT_20 = yes
+
 
 YYD_AR_SUPPORT = yes
 
@@ -784,6 +784,17 @@ CUSTOM_LK_LCM = rm68200_dsi_cmd
 CUSTOM_UBOOT_LCM = rm68200_dsi_cmd
 CUSTOM_KERNEL_LCM = rm68200_dsi_cmd
 
+
+
+
+
+
+
+
+
+
+
+WAKE_UP_NAME=xiaoyong
 
 
 
