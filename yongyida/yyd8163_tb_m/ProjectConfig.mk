@@ -739,7 +739,7 @@ ADUPS_FOTA_WITHOUT_MENU=no
 #adupsfota end
 
 #YYDRobotVideo
-VIDEO_TYPE=webrtc
+
 
 YYD_BREATHLED_SUPPORT = yes
 
