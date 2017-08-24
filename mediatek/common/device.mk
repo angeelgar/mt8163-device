@@ -2274,6 +2274,10 @@ else ifeq ($(strip $(WAKE_UP_NAME)), xiaoyong)
     PRODUCT_PACKAGES += YYDRobotMediaPush    		# 烧录辅助工具，工厂贴片时用
 endif
 
+ifeq ($(strip $(WAKE_UP_NAME)), xiaoyong)
+    PRODUCT_PACKAGES += YYDRobotMediaPush    		# 烧录辅助工具，工厂贴片时用
+endif
+
 ifeq ($(strip $(YYD_INFRARED_SUPPORT)), yes)
     PRODUCT_PACKAGES += YYDRobotInfrared    	# 红外遥控
 endif
@@ -2310,9 +2314,15 @@ PRODUCT_PACKAGES += YYDRobotXMMusicSearch
 PRODUCT_PACKAGES += YYDRobotSyn
 PRODUCT_PACKAGES += YYDRobotFactoryTest  # 工厂模式
 PRODUCT_PACKAGES += GooglePinYin
+
 PRODUCT_PACKAGES += YYDRobotVoiceMainService
-PRODUCT_PACKAGES += YYDRobotVoiceMaster 
 PRODUCT_PACKAGES += YYDRobotHeath 
+PRODUCT_PACKAGES += YYDRobotVoiceMaster
+PRODUCT_PACKAGES += YYDRobotGL1
+PRODUCT_PACKAGES += YYDRobotGL2
+PRODUCT_PACKAGES += YYDRobotGL3
+PRODUCT_PACKAGES += YYDRobotFaceRecognizer
+PRODUCT_PACKAGES += YYDRobotMediaResource
 
 ifeq ($(strip $(YYD_FACE_RECOGNITION_SUPPORT)), yes)
     # 是否支持人脸识别应用

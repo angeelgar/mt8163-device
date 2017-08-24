@@ -739,16 +739,16 @@ ADUPS_FOTA_WITHOUT_MENU=no
 #adupsfota end
 
 #YYDRobotVideo
-VIDEO_TYPE=webrtc
+
 
 YYD_BREATHLED_SUPPORT = yes
 
-YYD_PRODUCT_20 = yes
+
 
 YYD_AR_SUPPORT = yes
 
 
-WAKE_UP_NAME=youxue
+
 YYD_5MIC_SUPPORT = yes
 
 
@@ -765,6 +765,36 @@ YYD_5MIC_SUPPORT = yes
 
 
 
+
+
+
+
+
+
+
+YYD_INFRARED_SUPPORT = yes
+
+YYD_FACE_RECOGNITION_SUPPORT = yes
+VIDEO_TYPE = no
+
+LCM_HEIGHT = 720
+LCM_WIDTH = 1280
+BOOT_LOGO = hd720nl
+CUSTOM_LK_LCM = rm68200_dsi_cmd
+CUSTOM_UBOOT_LCM = rm68200_dsi_cmd
+CUSTOM_KERNEL_LCM = rm68200_dsi_cmd
+
+
+
+
+
+
+
+
+
+
+
+WAKE_UP_NAME=xiaoyong
 
 
 
