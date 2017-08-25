@@ -2317,9 +2317,7 @@ PRODUCT_PACKAGES += GooglePinYin
 
 PRODUCT_PACKAGES += YYDRobotVoiceMainService
 
-ifeq ($(strip $(CUSTOM_LIBIN)), yes)
 PRODUCT_PACKAGES += YYDRobotHeath 
-endif
 
 PRODUCT_PACKAGES += YYDRobotVoiceMaster
 PRODUCT_PACKAGES += YYDRobotGL1
