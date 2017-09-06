@@ -2317,7 +2317,9 @@ PRODUCT_PACKAGES += GooglePinYin
 
 PRODUCT_PACKAGES += YYDRobotVoiceMainService
 
+ifeq ($(strip $(CUSTOM_NAME)), libin_y20)
 PRODUCT_PACKAGES += YYDRobotHeath 
+endif
 
 PRODUCT_PACKAGES += YYDRobotVoiceMaster
 PRODUCT_PACKAGES += YYDRobotGL1_3.0
