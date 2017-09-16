@@ -2270,6 +2270,12 @@ endif
 
 ifeq ($(strip $(WAKE_UP_NAME)), xiaoshuai)
     PRODUCT_PACKAGES += YYDRobotMediaPush    		# 烧录辅助工具，工厂贴片时用
+else ifeq ($(strip $(WAKE_UP_NAME)), xiaoyong)
+    PRODUCT_PACKAGES += YYDRobotMediaPush    		# 烧录辅助工具，工厂贴片时用
+endif
+
+ifeq ($(strip $(WAKE_UP_NAME)), xiaoyong)
+    PRODUCT_PACKAGES += YYDRobotMediaPush    		# 烧录辅助工具，工厂贴片时用
 endif
 
 ifeq ($(strip $(YYD_INFRARED_SUPPORT)), yes)
@@ -2308,12 +2314,23 @@ PRODUCT_PACKAGES += YYDRobotXMMusicSearch
 PRODUCT_PACKAGES += YYDRobotSyn
 PRODUCT_PACKAGES += YYDRobotFactoryTest  # 工厂模式
 PRODUCT_PACKAGES += GooglePinYin
+
 PRODUCT_PACKAGES += YYDRobotVoiceMainService
-PRODUCT_PACKAGES += YYDRobotVoiceMaster 
+
+ifeq ($(strip $(CUSTOM_NAME)), libin_y20)
+PRODUCT_PACKAGES += YYDRobotHeath 
+endif
+
+PRODUCT_PACKAGES += YYDRobotVoiceMaster
+PRODUCT_PACKAGES += YYDRobotGL1_3.0
+PRODUCT_PACKAGES += YYDRobotGL2_3.0
+PRODUCT_PACKAGES += YYDRobotGL3_3.0
+PRODUCT_PACKAGES += YYDRobotFaceRecognizer
+PRODUCT_PACKAGES += YYDRobotMediaResource
+PRODUCT_PACKAGES += YYDRobotFoundPeople
 
 ifeq ($(strip $(YYD_FACE_RECOGNITION_SUPPORT)), yes)
     # 是否支持人脸识别应用
-    #PRODUCT_PACKAGES += YYDRobotFoundPeople
     #PRODUCT_PACKAGES += YYDRobotFaceRecognizer
 	#PRODUCT_PACKAGES += YYDRobotFoundPeople
 	#PRODUCT_PACKAGES += opencv
