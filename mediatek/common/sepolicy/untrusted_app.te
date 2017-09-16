@@ -85,6 +85,7 @@ typeattribute motor_device mlstrustedobject;
 #typeattribute sysfs_mic_switch mlstrustedobject;
 #typeattribute mic_onoff_device mlstrustedobject;
 typeattribute sensory_device mlstrustedobject;
+typeattribute aw9523b_device mlstrustedobject;
 
 allow untrusted_app i2c_device:chr_file { read write ioctl open };
 allow untrusted_app i2c1_device:chr_file { read write ioctl open };
@@ -99,3 +100,4 @@ allow untrusted_app motor_device:chr_file { read write ioctl open };
 #allow untrusted_app mic_onoff_device:chr_file { read write ioctl open };
 #allow untrusted_app sysfs_mic_switch:file { read open write};
 allow untrusted_app sensory_device:chr_file { read write ioctl open };
+allow untrusted_app aw9523b_device:chr_file { read write ioctl open };

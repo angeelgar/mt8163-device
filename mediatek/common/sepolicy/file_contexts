@@ -365,6 +365,7 @@
 #/dev/mic_switch(/.*)?                  u:object_r:mic_switch_device:s0
 #/dev/mic_onoff(/.*)?                  u:object_r:mic_onoff_device:s0
 /dev/sensory(/.*)?                  u:object_r:sensory_device:s0
+/dev/aw9523b(/.*)?                  u:object_r:aw9523b_device:s0
 /dev/motor_updt_ctl(/.*)? u:object_r:motor_device:s0
 # #####################################
 # sysfs files
