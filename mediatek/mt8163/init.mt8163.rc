@@ -96,7 +96,15 @@ on post-fs
     chown radio system /proc/freqhopping/freqhopping_debug
     chown radio system /proc/freqhopping/status
     chown radio system /proc/freqhopping/userdef
+######################
 
+		chown system system /dev/sensory
+    chmod 0777 /dev/sensory
+    
+    chown system system /dev/aw9523b
+    chmod 0777 /dev/aw9523b
+    
+######################
 # change owner
     chown system system /proc/bootprof
     chown root system /proc/mtprof/cputime
