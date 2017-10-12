@@ -2321,6 +2321,10 @@ ifeq ($(strip $(CUSTOM_NAME)), libin_y20)
 PRODUCT_PACKAGES += YYDRobotHeath 
 endif
 
+ifeq ($(strip $(CUSTOM_NAME)), rongshida)
+PRODUCT_PACKAGES += YYDRobotJPush 
+endif
+
 PRODUCT_PACKAGES += YYDRobotVoiceMaster
 PRODUCT_PACKAGES += YYDRobotGL1_3.0
 PRODUCT_PACKAGES += YYDRobotGL2_3.0
