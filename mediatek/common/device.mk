@@ -93,8 +93,8 @@ endif
 
 ifneq ($(strip $(MTK_BASIC_PACKAGE)), yes)
     ifneq ($(strip $(MTK_BSP_PACKAGE)), yes)
-        PRODUCT_PACKAGES += MtkCalendar
-        PRODUCT_PACKAGES += MtkBrowser
+        #PRODUCT_PACKAGES += MtkCalendar  peishengguo
+        #PRODUCT_PACKAGES += MtkBrowser    peishengguo
         #PRODUCT_PACKAGES += MtkQuickSearchBox
     endif
 endif
@@ -2165,7 +2165,7 @@ ifneq ($(TARGET_BUILD_VARIANT), user)
 endif
 PRODUCT_COPY_FILES += device/mediatek/common/slp/slp_conf:system/etc/slp_conf
 
-PRODUCT_PACKAGES += CarrierConfig
+#PRODUCT_PACKAGES += CarrierConfig  peishengguo
 
 ifeq ($(strip $(OPTR_SPEC_SEG_DEF)),OP09_SPEC0212_SEGDEFAULT)
   PRODUCT_COPY_FILES += vendor/mediatek/proprietary/frameworks/base/telephony/etc/spn-conf-op09.xml:system/etc/spn-conf-op09.xml

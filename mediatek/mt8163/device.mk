@@ -82,16 +82,16 @@ PRODUCT_PACKAGES += drvbd
 PRODUCT_PACKAGES += libaudio.usb.default
 PRODUCT_PACKAGES += audio.usb.default
 PRODUCT_PACKAGES += AccountAndSyncSettings
-PRODUCT_PACKAGES += DeskClock
+#PRODUCT_PACKAGES += DeskClock   peishengguo
 PRODUCT_PACKAGES += AlarmProvider
 PRODUCT_PACKAGES += Bluetooth
-PRODUCT_PACKAGES += Calculator
-PRODUCT_PACKAGES += Calendar
-PRODUCT_PACKAGES += CertInstaller
-PRODUCT_PACKAGES += DrmProvider
+#PRODUCT_PACKAGES += Calculator peishengguo
+#PRODUCT_PACKAGES += Calendar   peishengguo
+#PRODUCT_PACKAGES += CertInstaller peishengguo
+#PRODUCT_PACKAGES += DrmProvider peishengguo  
 #PRODUCT_PACKAGES += Email
 PRODUCT_PACKAGES += FusedLocation
-PRODUCT_PACKAGES += TelephonyProvider
+#PRODUCT_PACKAGES += TelephonyProvider  peishengguo
 #PRODUCT_PACKAGES += Exchange2
 PRODUCT_PACKAGES += LatinIME
 #PRODUCT_PACKAGES += Music
@@ -102,7 +102,7 @@ PRODUCT_PACKAGES += Settings
 PRODUCT_PACKAGES += Sync
 PRODUCT_PACKAGES += SystemUI
 PRODUCT_PACKAGES += Updater
-PRODUCT_PACKAGES += CalendarProvider
+#PRODUCT_PACKAGES += CalendarProvider peishengguo
 PRODUCT_PACKAGES += ccci_mdinit
 PRODUCT_PACKAGES += ccci_fsd
 PRODUCT_PACKAGES += ccci_rpcd
@@ -465,7 +465,7 @@ PRODUCT_PACKAGES += p2p_supplicant_overlay.conf
 PRODUCT_PACKAGES += hostapd
 PRODUCT_PACKAGES += hostapd_cli
 PRODUCT_PACKAGES += lib_driver_cmd_mt66xx.a
-PRODUCT_PACKAGES += CallLogBackup
+#PRODUCT_PACKAGES += CallLogBackup  peishengguo
 PRODUCT_PACKAGES += libacdk
 
 PRODUCT_PACKAGES += hwcomposer.mt8163
@@ -699,7 +699,7 @@ endif
 ifeq ($(strip $(MTK_EMULATOR_SUPPORT)),yes)
   PRODUCT_PACKAGES += SDKGallery
 else
-  PRODUCT_PACKAGES += Gallery2
+ # PRODUCT_PACKAGES += Gallery2  peishengguo
 endif
 
 ifneq ($(strip $(MTK_EMULATOR_SUPPORT)),yes)
@@ -1347,7 +1347,7 @@ endif
 PRODUCT_PACKAGES += wifi2agps
 
 ifeq ($(strip $(MTK_WFD_SINK_SUPPORT)), yes)
-  PRODUCT_PACKAGES += MtkFloatMenu
+  #PRODUCT_PACKAGES += MtkFloatMenu  peishengguo
 endif
 
 PRODUCT_PACKAGES += libsec
