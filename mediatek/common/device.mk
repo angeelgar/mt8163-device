@@ -94,7 +94,7 @@ endif
 ifneq ($(strip $(MTK_BASIC_PACKAGE)), yes)
     ifneq ($(strip $(MTK_BSP_PACKAGE)), yes)
         #PRODUCT_PACKAGES += MtkCalendar  peishengguo
-        #PRODUCT_PACKAGES += MtkBrowser    peishengguo
+        PRODUCT_PACKAGES += MtkBrowser
         #PRODUCT_PACKAGES += MtkQuickSearchBox
     endif
 endif
