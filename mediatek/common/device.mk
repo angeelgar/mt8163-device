@@ -2332,6 +2332,7 @@ PRODUCT_PACKAGES += YYDRobotGL3_3.0
 PRODUCT_PACKAGES += YYDRobotFaceRecognizer
 PRODUCT_PACKAGES += YYDRobotMediaResource
 PRODUCT_PACKAGES += YYDRobotFoundPeople
+PRODUCT_PACKAGES += YYDRobotXunfeiMusic
 
 ifeq ($(strip $(YYD_FACE_RECOGNITION_SUPPORT)), yes)
     # 是否支持人脸识别应用
