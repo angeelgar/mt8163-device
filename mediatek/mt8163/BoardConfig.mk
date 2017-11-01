@@ -155,7 +155,7 @@ BOARD_SEPOLICY_UNION += \
     g3d_device.te \
     gpad.te
 
-ifeq ($(TARGET_BUILD_VARIANT),user)
+#ifeq ($(TARGET_BUILD_VARIANT),user)
 WITH_DEXPREOPT := true
-DONT_DEXPREOPT_PREBUILTS := true
-endif
+#DONT_DEXPREOPT_PREBUILTS := true
+#endif
