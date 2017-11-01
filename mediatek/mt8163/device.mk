@@ -402,8 +402,8 @@ PRODUCT_PACKAGES += dpfd
 PRODUCT_PACKAGES += libaal
 PRODUCT_PACKAGES += aal
 PRODUCT_PACKAGES += libaal_cust
-PRODUCT_PACKAGES += SchedulePowerOnOff
-PRODUCT_PACKAGES += BatteryWarning
+#PRODUCT_PACKAGES += SchedulePowerOnOff  peishengguo 11.1
+#PRODUCT_PACKAGES += BatteryWarning  peishengguo 11.1
 PRODUCT_PACKAGES += pq
 PRODUCT_PACKAGES += libpq_cust
 PRODUCT_PACKAGES += libPQjni
@@ -760,7 +760,7 @@ endif
 ifeq ($(strip $(MTK_CAMERA_APP)), yes)
   PRODUCT_PACKAGES += CameraOpen
 else
-  PRODUCT_PACKAGES += Camera
+ # PRODUCT_PACKAGES += Camera  peishengguo 11.1
 endif
 
 ifeq ($(strip $(MTK_VIDEO_FAVORITES_WIDGET_APP)), yes)
@@ -1010,7 +1010,7 @@ ifeq ($(strip $(MTK_FM_TX_SUPPORT)), yes)
 endif
 
 ifeq ($(strip $(MTK_SOUNDRECORDER_APP)),yes)
-  PRODUCT_PACKAGES += SoundRecorder
+ # PRODUCT_PACKAGES += SoundRecorder peishengguo 11.1
 endif
 
 ifeq ($(strip $(MTK_WEATHER3D_WIDGET)), yes)
