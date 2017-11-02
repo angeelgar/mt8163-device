@@ -93,7 +93,7 @@ endif
 
 ifneq ($(strip $(MTK_BASIC_PACKAGE)), yes)
     ifneq ($(strip $(MTK_BSP_PACKAGE)), yes)
-        #PRODUCT_PACKAGES += MtkCalendar  peishengguo 11.1
+        PRODUCT_PACKAGES += MtkCalendar  #peishengguo 11.1
         PRODUCT_PACKAGES += MtkBrowser
         #PRODUCT_PACKAGES += MtkQuickSearchBox
     endif
@@ -110,7 +110,7 @@ PRODUCT_PACKAGES += mtk-rilmd2
 PRODUCT_PACKAGES += librilmtkmd2
 PRODUCT_PACKAGES += gsm0710muxdmd2
 PRODUCT_PACKAGES += md_minilog_util
-#PRODUCT_PACKAGES += BSPTelephonyDevTool  peishengguo 11.1
+PRODUCT_PACKAGES += BSPTelephonyDevTool  #peishengguo 11.1
 PRODUCT_PACKAGES += ppl_agent
 
 ifeq ($(strip $(MTK_C2K_SUPPORT)), yes)
@@ -285,7 +285,7 @@ endif
 # Telephony end
 
 # For MTK Camera
-#PRODUCT_PACKAGES += Camera peishengguo 11.1
+PRODUCT_PACKAGES += Camera  #peishengguo 11.1
 
 ifeq ($(strip $(MTK_HEART_RATE_MONITOR_SUPPORT)),yes)
 PRODUCT_PACKAGES += HeartRate
@@ -476,7 +476,7 @@ endif
 # add for ATCI JAVA layer service
 PRODUCT_PACKAGES += AtciService
 
-#PRODUCT_PACKAGES += DataTransfer  peishengguo 11.1
+PRODUCT_PACKAGES += DataTransfer  #peishengguo 11.1
 
 # add for OMA DM, common module used by MediatekDM & red bend DM
 PRODUCT_PACKAGES += dm_agent_binder
