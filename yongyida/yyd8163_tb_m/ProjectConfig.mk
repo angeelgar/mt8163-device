@@ -964,4 +964,11 @@ CUSTOM_NAME = xiaoyong
 
 
 
-MTK_Y20D_DDR_SUPPORT =yes
+
+
+
+
+
+
+
+
