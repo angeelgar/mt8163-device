@@ -520,16 +520,16 @@ endif
 $(call inherit-product-if-exists, vendor/mediatek/proprietary/frameworks/base/voicecommand/cfg/voicecommand.mk)
 
 ifeq ($(strip $(MTK_VOICE_UNLOCK_SUPPORT)),yes)
-    PRODUCT_PACKAGES += VoiceCommand
+    #PRODUCT_PACKAGES += VoiceCommand
 else
     ifeq ($(strip $(MTK_VOICE_UI_SUPPORT)),yes)
-        PRODUCT_PACKAGES += VoiceCommand
+       # PRODUCT_PACKAGES += VoiceCommand
     else
         ifeq ($(strip $(MTK_VOICE_CONTACT_SEARCH_SUPPORT)),yes)
-            PRODUCT_PACKAGES += VoiceCommand
+           # PRODUCT_PACKAGES += VoiceCommand
         else
             ifeq ($(strip $(MTK_VOW_SUPPORT)),yes)
-                PRODUCT_PACKAGES += VoiceCommand
+               # PRODUCT_PACKAGES += VoiceCommand
             endif
         endif
     endif
