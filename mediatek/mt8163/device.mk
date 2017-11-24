@@ -1446,14 +1446,14 @@ $(call inherit-product-if-exists, vendor/mediatek/mt8163/device-vendor.mk)
 
 ifeq ($(strip $(MTK_EMMC_SUPPORT)), yes)
 # setup dm-verity configs.
-PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/mtk-msdc.0/11230000.MSDC0/by-name/system
-$(call inherit-product, build/target/product/verity.mk)
+#PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/mtk-msdc.0/11230000.MSDC0/by-name/system  peishengguo remover dm-verity for save 20M ram
+#$(call inherit-product, build/target/product/verity.mk)  peishengguo remover dm-verity for save 20M ram
 endif
 
 ifeq ($(strip $(MTK_NAND_MTK_FTL_SUPPORT)), yes)
 # setup dm-verity configs.
-PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/mt_ftl_blk0_0
-$(call inherit-product, build/target/product/verity.mk)
+#PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/mt_ftl_blk0_0  peishengguo remover dm-verity for save 20M ram
+#$(call inherit-product, build/target/product/verity.mk)   peishengguo remover dm-verity for save 20M ram
 endif
 
 ifeq ($(strip $(MTK_IN_HOUSE_TEE_SUPPORT)),yes)
