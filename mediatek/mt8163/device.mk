@@ -1408,6 +1408,7 @@ PRODUCT_COPY_FILES += external/mic5/pro_fea_data.ied:system/lib/pro_fea_data.ied
 PRODUCT_COPY_FILES += external/mic5/pro_flash_algo.iea:system/lib/pro_flash_algo.iea
 PRODUCT_COPY_FILES += external/mic5/pro_flash_data.ied:system/lib/pro_flash_data.ied
 PRODUCT_COPY_FILES += external/mic5/RS20.bin:system/lib/RS20.bin
+PRODUCT_COPY_FILES += external/mic5/Y50E.bin:system/lib/Y50E.bin
 
 PRODUCT_COPY_FILES += device/mediatek/mt8163/media_codecs.xml:system/etc/media_codecs.xml
 PRODUCT_COPY_FILES += device/mediatek/mt8163/media_codecs_performance.xml:system/etc/media_codecs_performance.xml
