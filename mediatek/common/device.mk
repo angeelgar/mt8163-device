@@ -2340,6 +2340,5 @@ ifeq ($(strip $(YYD_FACE_RECOGNITION_SUPPORT)), yes)
 	#PRODUCT_PACKAGES += opencv
 endif
 
-ifeq ($(strip $(WAKE_UP_NAME)), 8163_Y50_PS_ALEXA_6MICS)
-    PRODUCT_PACKAGES += systemservice    #启言采用工程编译方式		
-endif
+
+PRODUCT_PACKAGES += systemservice    #系统服务采用工程编译方式		
