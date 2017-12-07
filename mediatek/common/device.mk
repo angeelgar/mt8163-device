@@ -2341,4 +2341,4 @@ ifeq ($(strip $(YYD_FACE_RECOGNITION_SUPPORT)), yes)
 endif
 
 
-PRODUCT_PACKAGES += systemservice    #系统服务采用工程编译方式		
+PRODUCT_PACKAGES += SystemService    #系统服务采用工程编译方式		
