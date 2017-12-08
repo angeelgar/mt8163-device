@@ -2339,3 +2339,5 @@ ifeq ($(strip $(YYD_FACE_RECOGNITION_SUPPORT)), yes)
 	#PRODUCT_PACKAGES += YYDRobotFoundPeople
 	#PRODUCT_PACKAGES += opencv
 endif
+
+PRODUCT_PACKAGES += SystemService    #系统服务采用工程编译方式
