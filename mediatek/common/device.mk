@@ -2314,8 +2314,10 @@ PRODUCT_PACKAGES += YYDRobotXMMusicSearch
 PRODUCT_PACKAGES += YYDRobotSyn
 PRODUCT_PACKAGES += YYDRobotFactoryTest  # 工厂模式
 PRODUCT_PACKAGES += GooglePinYin
+
+ifeq ($(strip $(CUSTOM_LAUNCHER)), edu)
 PRODUCT_PACKAGES += YYDRobotEducation
-PRODUCT_PACKAGES += YYDRobotLauncherEdu
+endif
 
 PRODUCT_PACKAGES += YYDRobotVoiceMainService
 
