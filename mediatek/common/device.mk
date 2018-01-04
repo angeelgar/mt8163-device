@@ -2314,6 +2314,8 @@ PRODUCT_PACKAGES += YYDRobotXMMusicSearch
 PRODUCT_PACKAGES += YYDRobotSyn
 PRODUCT_PACKAGES += YYDRobotFactoryTest  # 工厂模式
 PRODUCT_PACKAGES += GooglePinYin
+PRODUCT_PACKAGES += YYDRobotEducation
+PRODUCT_PACKAGES += YYDRobotLauncherEdu
 
 PRODUCT_PACKAGES += YYDRobotVoiceMainService
 
