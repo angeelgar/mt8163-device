@@ -2317,6 +2317,7 @@ PRODUCT_PACKAGES += GooglePinYin
 
 ifeq ($(strip $(CUSTOM_LAUNCHER)), edu)
 PRODUCT_PACKAGES += YYDRobotEducation
+PRODUCT_PACKAGES += YYDRobotLauncherEdu
 endif
 
 PRODUCT_PACKAGES += YYDRobotVoiceMainService
